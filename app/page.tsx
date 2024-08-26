@@ -8,6 +8,6 @@ export const metadata = {
 export default function Page() {
   return <div>
   <h1>XPerience - ToDo Kata</h1>
-  <ToDo></ToDo>
+  <ToDo item = {{"title":"TDD", "description":"Training"}}></ToDo>
   </div>
 }
