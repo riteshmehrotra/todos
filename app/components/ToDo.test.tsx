@@ -4,7 +4,11 @@ import ToDo from "./ToDo";
 
 describe("Todo component for display item to work on ",()=>{
     it("shows title of the item",()=>{
-        render(<ToDo/>)
+        const item = {"title": "Bootcamp", "description": "It's a TDD bootcamp"};
+        render(<ToDo item={item}/>)
         expect(screen.getByText("Bootcamp")).toBeDefined();
+        expect(screen.getByText("It's a TDD bootcamp")).toBeDefined();
     })
+
+
 })
