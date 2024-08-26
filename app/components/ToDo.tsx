@@ -1,6 +1,6 @@
 const ToDo = ({item})=>{
     return <div>
-    <div>{item.title}</div>
+    <h3>{item.title}</h3>
     <div>{item.description}</div>
     </div>
 }
